@@ -1,0 +1,297 @@
+
+.dogadjajUgradu {
+    
+//    height: 95%;
+    
+      @media screen and (min-width: 1200px){
+    }
+    
+}
+
+
+
+.naslovDog {
+    padding: 15% 0% 30% 5%;
+    margin-top: 50%;
+    
+   
+    
+     @media screen and (min-width: 460px){
+        padding: 20% 0% 20% 5%;
+         
+         @media screen and (min-height: 440px){
+       margin-top: 32%; 
+             padding: 16% 0% 20% 5%;
+        }
+    }
+    
+    
+    
+      @media screen and (min-width: 640px){
+   margin-top: 18%;
+          
+          
+          
+    }
+    
+    
+    
+     @media screen and (min-width: 768px){
+        padding: 15% 0% 15% 5%;
+    }
+    
+      @media screen and (min-width: 992px){
+        padding: 17% 0% 17% 5%;
+    }
+    
+    
+    & h2 {
+        margin-bottom: -2%;
+      @include naslovNaMobilnim;
+        font-weight: 500;
+        @media screen and (min-width: 460px){
+        margin-bottom: -1%;
+    }
+        @media screen and (min-width: 640px){
+      
+         @media screen and (min-height: 500px){
+         margin-bottom: 0%;
+        }
+    }
+        
+            @media screen and (min-width: 768px){
+        font-size: 40px;
+    }
+            @media screen and (min-width: 992px){
+        font-size: 45px;
+                font-weight: 500;
+    }
+ }
+    
+    & h4 {
+        
+      @include tekstNaMobilnim;
+               @media screen and (min-width: 992px){
+        font-size: 20px;
+                font-weight: 800;
+    }
+    }
+    
+}
+
+.najavaDog {
+    padding-top: 15%;
+    padding-bottom: 30%;
+    text-align: center;
+    
+     @media screen and (min-width: 640px){
+         padding-top: 10%;
+    padding-bottom: 20%;
+    }
+    
+     @media screen and (min-width: 992px){
+         padding-top: 5%;
+    padding-bottom: 10%;
+    }
+    
+      @media screen and (min-width: 1200px){
+         padding-top: 2%;
+    padding-bottom: 8%;
+    }
+}
+
+.dogadjanje {
+    margin-bottom: 20%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fffadd;
+//    text-shadow: 0 1px 0 #ccc,
+//               0 2px 0 #c9c9c9,
+//               0 3px 0 #bbb,
+//               0 4px 0 #b9b9b9,
+//               0 5px 0 #aaa,
+//               0 6px 1px rgba(0, 0, 0, 0.1),
+//               0 0 5px rgba(0,0,0,.1),
+//               0 1px 3px rgba(0,0,0,.3),
+//               0 3px 5px rgba(0,0,0,.2),
+//               0 5px 10px rgba(0,0,0,.25),
+//               0 10px 10px rgba(0,0,0,.2),
+//               0 20px 20px rgba(0,0,0,.15);
+    font-family: $Monserat;
+    
+     @media screen and (min-width: 640px){
+         margin-bottom: 20%;
+    }
+    
+        @media screen and (min-width: 768px){
+        font-size: 40px;
+         margin-bottom: 15%;
+    }
+    
+     @media screen and (min-width: 992px){
+        
+         margin-bottom: 10%;
+    }
+    
+     @media screen and (min-width: 1200px){
+        
+         margin-bottom: 4%;
+    }
+}
+
+.timer {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 20%;
+    text-align: center;
+    
+       @media screen and (min-width: 768px){
+        margin-bottom: 18%;
+    }
+    
+     @media screen and (min-width: 992px){
+        margin-bottom: 11%;
+    }
+    
+    @media screen and (min-width: 1200px){
+        margin-bottom: 6%;
+    }
+    font-family: $Orbitron;
+    
+    & div { //.dani i .bezDana
+//        border: $zelenaGr;
+        display: block;
+//        width: 95%;
+        
+       
+        
+        & div { //sati, minuti, sekunde
+            display: inline-block;
+            width: 28%;
+            font-size: 0.8em;
+            color: #fff;
+//            text-shadow: $simulacija-outlined;
+            border: $granicaTimera;
+            margin: 2%;
+            letter-spacing: 4px;
+            
+             @media screen and (min-width: 460px){
+       letter-spacing: 6px;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          letter-spacing: 8px;
+         border: $granicaTimeraSrednji;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       border: $granicaTimeraVeliki;
+         
+       
+    }
+        }
+    }
+}
+
+.dani {
+    color: #fff;
+//    text-shadow: $simulacija-outlined;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 30%;
+    border: $granicaTimera;
+    
+     @media screen and (min-width: 460px){
+         letter-spacing: 6px;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          letter-spacing: 8px;
+         border: $granicaTimeraSrednji;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+          border: $granicaTimeraVeliki;
+       
+    }
+    
+}
+
+.vrijeme {
+    font-size: 40px;
+    font-weight: 700;
+//    text-shadow: $simulacija-outlined;
+    color: white;
+//    text-shadow: 
+//    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+//    2px 1px 1px #ccc, 1px 2px 1px #eee,
+//    3px 2px 1px #ccc, 2px 3px 1px #eee,
+//    4px 3px 1px #ccc, 3px 4px 1px #eee,
+//    5px 4px 1px #ccc, 4px 5px 1px #eee,
+//    6px 5px 1px #ccc, 5px 6px 1px #eee,
+//    7px 6px 1px #ccc;
+    
+        @media screen and (min-width: 768px){
+        font-size: 52px;
+    }
+    
+      @media screen and (min-width: 992px){
+        font-size: 79px;
+    }
+    
+     @media screen and (min-width: 1200px){
+        font-size: 92px;
+    }
+}
+
+.viseDogadjaj {
+    border: 2px solid black;
+    width: 56%;
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: $glavnaZuta3;
+    font-family: $Hind;
+    @include tekstNaMobilnim; 
+    
+      @media screen and (min-width: 640px){
+        width: 45%;
+    }
+    
+      @media screen and (min-width: 768px){
+        width: 30%;
+    }
+    
+     @media screen and (min-width: 992px){
+        width: 20%;
+    }
+          @media screen and (min-width: 1200px){
+        width: 15%;
+    }
+    
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,368 @@
+
+.uputstvoMob {
+    @media screen and (min-width:992px){
+        display: none;
+    }
+}
+
+.uputstvoEkr {
+    @media screen and (max-width:992px){
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+.okvirKalendaraDostupnosti {
+ margin-bottom: 1%;
+//    border: $zelenaGr;
+
+ display: flex;
+    justify-content: flex-start;
+    
+width: 400%;
+//border: 3px solid black;
+ margin-left: -100%;
+  
+}
+
+.prethodniKvartal, .naredniKvartal {
+	display: inline-block;
+    width: 20%;
+    
+    & img {
+        width: 16%;
+    }
+}
+
+
+
+
+.prethodniKvartal {
+    & img {
+         -ms-transform: rotate(180eg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+}
+    }
+
+
+.kvartalStrelica {
+	 @media screen and (min-width:768px){
+          display: none;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+}
+
+.nazivKvartala {
+    
+    @include tekstNaMobilnim;
+    display: flex;
+    justify-content: center;
+}
+
+
+.kvartal {
+    width: 25%;
+    display: inline;
+//    float: left;
+//    border: $crvenaGr;
+//   justify-content: center;
+    
+    & h4 {
+    text-align: center;
+    margin-bottom: 1%;
+        display: inline;
+    
+}
+    
+    & table {
+        
+        margin-bottom: 2%;
+        
+       
+        
+        & #objekat, & .zaVrijednosti {
+            visibility: hidden;
+        }
+        
+    }
+}
+
+
+.kalendar {
+//     border: $crvenaGr;
+    width: 100%;
+/*    height: 30%;*/
+     padding-top: 5%;
+    
+    display: inline-block;
+    
+/*   margin: 3% auto;*/
+    margin-bottom: 3%;
+
+    
+    
+     @media screen and (min-width: 460px){
+        width: 40%;
+    }
+
+    
+     @media screen and (max-width: 640px){
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+    
+    
+     @media screen and (min-width:768px){
+           
+	    width: 30%;
+        height: 22%;
+        margin-left: 2%;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding: 0.5%;
+
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+     & .date {
+         margin-top: 3%;
+         margin-bottom: -1%;
+            text-align: center;
+         @include tekstNaMobilnim;
+            
+        }
+    & .prethodniKvartal, & .naredniKvartal {
+        display: inline;
+    }
+    
+    & .prethodniKvartal {
+        margin-left: 40%;
+    }
+}
+
+
+
+
+
+.datum {
+    text-align: left;
+    height: 20%;
+}
+
+.soba, .mjesec {
+    text-align: center;
+    display: block;
+    color: rgba(45, 45, 124, 0.6);
+}
+
+.mjesec {
+    font-size: 1.1em;
+    margin-bottom: 3%;
+}
+
+.dostupnost1, .dostupnost0 {
+    border: 1px solid white;
+    color: white;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    padding: 0.5%;
+    flex-direction: column;
+   
+    width: calc(100% / 7);
+/*    display: inline-block;*/
+
+    align-items: center;
+    justify-content: center;
+	
+    
+    font-size: 0.8em;
+    font-weight: 500;
+    display: inline-flex;
+    
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+   
+}
+
+.praznoKalend {
+    
+    border: 1px solid white;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    height: 20%;
+    width: calc(100% / 7);
+/*    visibility: hidden;*/
+   
+}
+
+
+
+
+.dostupnost2 {
+    display: none;
+}
+
+
+.dostupnost1 {
+    background-color: green;
+    background-color: rgb(29, 157, 63);
+}
+
+.dostupnost0 {
+    background-color: red;
+	background-color: rgb(248, 80, 64);
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    
+  
+    .okvir {
+        text-align: center;
+    }
+    
+   
+    
+    
+    
+    
+    
+    .date {
+/*        display: inherit;*/
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    .zaVrijednosti {
+        display: none;
+      
+    }
+    
+    
+}
+
+  
+
+
+.datum-info {
+    border: 1px solid black;
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    display: none;
+    background-color: white;
+
+}
+
+
+.pocetniDatum {
+    color: rebeccapurple;
+}
+
+.aranzman {
+    color: chocolate;
+}
+
+.aranzSaPopustom {
+   color: chocolate;
+    font-size: 0.9em;
+}
+
+.vrijednostPopusta {
+    color: red;
+    font-weight: 400;
+}
+
+.pozovite {
+    color: chocolate;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.zauzeto { 
+  text-align: center;
+    
+}
+
+
+
+
+.uzvicnik {
+    width: 11px;
+}
+
+.iksic {
+    float: right;
+    background-color: black;
+    color: white;
+    position: relative;
+     bottom: 7px;
+     left: 5px;
+    width: 15px;
+    text-align: center;
+    border-radius: 10%;
+    @media screen and (min-width: 992px){
+        display: none;
+        
+    }
+}
+
+.dan_datum, .cijena_datum {
+    display: block   !important;
+}
+
+.dan_datum {
+//	text-decoration: underline;
+    font-size: 18px;
+}
+
+.cijena_datum {
+    font-size: 10px;
+}

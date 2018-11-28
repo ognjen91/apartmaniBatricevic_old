@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3, h4, h5, h6, h7, p {
+     cursor: default;
+}
+
+.slider {
+    & img {
+        width: 100%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+$glavnaPlava : #344a71;
+$glavnaPlava2 : rgba(52, 74, 113, 0.6);
+$glavnaPlava3 : rgba(52, 74, 113, 0.5);
+$glavnaPlava4 : rgba(52, 74, 113, 0.4);
+$glavnaPlava5 : rgba(3, 26, 57, 0.83);
+$glavnaZuta : #E7C130;
+$glavnaZuta2 : rgba(231, 193, 48, 0.6);
+$glavnaZuta3 : rgba(231, 193, 48, 0.5);
+$glavnaZuta4 : rgba(231, 193, 48, 0.4);
+
+
+
+$bojaZaglavlja : rgb(31, 35, 43);
+$textZaglavlja : #ACACAC;
+
+$bojaTexta: #444;
+$bojaPrimaryMenua : #525252;
+$bojaNavigacije : #232323;
+
+
+$Monserat : 'Montserrat', sans-serif; //naslovi i tekst
+$Hind : 'Hind', sans-serif; //sitniji tekst
+$Orbitron: 'Orbitron', sans-serif; //countdown font
+$potpisniFont: 'Great Vibes', cursive;
+
+@mixin tekstNaMobilnim {
+    
+     color: $bojaTexta;
+        line-height: 1.6em;
+        font-size: 1.1;
+        font-family: $Hind;
+        letter-spacing: 0.02em;
+}
+
+@mixin naslovNaMobilnim {
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 36px;
+        letter-spacing: 0.014em;
+        font-family: $Monserat;
+        
+}
+
+@mixin obicanTekst {
+    font-family: $Hind;
+    line-height: 1.6em;
+    color: rbg(68, 68, 68);
+    font-size: 15px;
+}
+
+
+  @media screen and (min-width: 460px){
+         
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+           margin-left: 44%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+
+
+
+$granicaSaGlavnomZutom : 1px solid #E7C130;
+$granicaSaGlavnomZutom2 : 2px solid #E7C130;
+$granicaSaGlavnomPlavom : 1px solid #344A71;
+$granicaSaGlavnomPlavom2 : 2px solid #344A71;
+$granicaSaPomocnomPlavom: 1px solid #526586;
+
+$granicaTimera: 2px solid #fff;
+$granicaTimeraSrednji: 3px solid #fff;
+$granicaTimeraVeliki: 4 px solid #fff;
+
+$crvenaGr : 1px solid red;
+$zelenaGr : 1px solid green;
+$zutaGr : 1px solid yellow;
+$plavaGr : 1px solid blue;
+$bijelaGr : 1px solid white;
+$crnaGr : 1px solid black;
+$aquaGr : 1px solid aqua;
+
+$simulacija-outlined:  -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+

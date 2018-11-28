@@ -1,0 +1,785 @@
+.ponudaLijevo, .ponudaDesno {
+    opacity: 0;
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+   z-index: 10;
+    display: inline-flex;
+    
+    background-color: rgba(224, 203, 203, 1);
+    
+    
+     @media screen and (min-width: 640px){
+            font-size: 18px;
+        }
+    
+     @media screen and (min-width:768px){
+          font-size: 21px;
+        }
+    
+    @media screen and (min-width: 992px){
+    font-size: 24px;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       font-size: 28px;
+         
+       
+    }
+    
+   
+    
+    
+   
+    
+}
+
+.ponudaLijevo {
+    left: -50%;
+//    border: $crvenaGr;
+ padding-top: 40%;
+    
+    @media screen and (min-width: 460px){
+       padding-top: 30%;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+    padding-left: 10%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       padding-top: 17%;
+         
+       
+    }
+   
+    
+    &>div {
+//        border: $crvenaGr;
+        text-align: center;
+        
+        &>h1, &>h3 {
+            text-align: center;
+            @include naslovNaMobilnim;
+        }
+        
+        &>h1 {
+            font-size: 30px;
+            
+             @media screen and (min-width: 1200px){
+       font-size: 40px;
+        }
+        }
+          &>h3 {
+            font-size: 23px;
+              margin-bottom: 15%;
+              
+                 @media screen and (min-width: 1200px){
+       font-size: 30px;
+        }
+        }
+    
+    }
+    
+     & .rezervisi, & .nazad {
+        width: 70%;
+        border: $granicaSaGlavnomPlavom;
+        border-radius: 15%;
+        @include tekstNaMobilnim;
+        font-size: 20px;
+        text-align: center;
+         
+        & a {
+            text-decoration: none;
+            @include tekstNaMobilnim;
+            font-size: 20px;
+        }
+    }
+    
+     & .rezervisi {
+        display: block;
+        margin: 20% auto; 
+    }
+    
+    & .nazad {
+        display: block;
+        margin: 10% auto; 
+    }
+}
+
+.ponudaDesno {
+    right: -50%;
+    padding-top: 10%;
+    
+    @media screen and (min-width: 640px){
+            padding-top:5%;
+        }
+    
+     @media screen and (min-width: 640px){
+            padding-top:2%;
+        }
+    
+    &>div {
+     display: flex;
+     flex-direction: column;
+        text-align: center;
+        
+        & img {
+            width: 60%;
+            margin: 0 auto 5% auto;
+            display: block;
+            
+            @media screen and (min-width: 460px){
+       width: 50%;
+        }
+    
+     @media screen and (min-width: 640px){
+            width: 45%;
+        }
+    
+     @media screen and (min-width:768px){
+          width: 40%;
+        }
+    
+    @media screen and (min-width: 992px){
+    width: 33%;
+      display: inline-block;
+    }
+    
+    @media screen and (min-width: 1200px){
+       margin: 0 auto 3% auto;
+         width: 23%;
+       
+    }
+        }
+    }
+}
+
+
+
+.okvirDogadjanjaUgradu {
+    padding-top: 5%;
+    height: 110vh;
+//    border: 3px solid red;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    @media screen and (min-width: 460px){
+       
+        }
+    
+     @media screen and (min-width: 640px){
+            height: 125vh;
+        }
+    
+     @media screen and (min-width:768px){
+          height: 100vh;
+         
+         @media screen and (max-height:500px){
+             height: 120vh;
+        }
+    }
+    
+    @media screen and (min-width: 992px){
+    padding-top: 3%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+        height: 120vh;
+         padding-top: 2%;
+       
+    }
+}
+
+.staIkad {
+    //    border: $zutaGr;
+//    margin-top: 15%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8%;
+    &>div {
+//        border: $crvenaGr;
+    }
+    
+    
+     @media screen and (min-width: 460px){
+        @media screen and (min-height: 550px){
+      margin-left: 4%;
+        }
+        }
+    
+     @media screen and (min-width: 640px){
+            margin-left: 9%;
+         margin-bottom: 4%;
+      
+        }
+    
+     @media screen and (min-width:768px){
+            margin-left: 13%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         margin-left: 18%;
+       
+    }
+}
+
+.eventDate {
+    margin-left: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+//    border: $zutaGr;
+    &>div {
+        //border: $crvenaGr;
+        width: 48%;
+    }
+     @media screen and (min-width: 460px){
+       margin-left: 5%;
+         justify-content: flex-end;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+}
+
+.evmonth,
+.evday {
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    //padding-right: 30%;
+    font-size: 135%;
+//    border: $plavaGr;
+    font-family: $Hind;
+    margin-top: 20%;
+    
+     @media screen and (min-width: 460px){
+       
+        }
+    
+     @media screen and (min-width: 640px){
+            justify-content: center;
+        }
+    
+     @media screen and (min-width:768px){
+          font-size: 180%;
+         justify-content: center;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+         font-size: 150%;
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         font-size: 200%;
+       
+    }
+}
+
+.evday {
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start; 
+    @media screen and (min-width: 460px){
+       font-size: 25px;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+   
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+}
+
+.evmonth {
+    align-items: flex-end;
+    margin-bottom: -8%;
+}
+
+.evyear {
+    font-size: 165%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: flex;
+    color: #fff;
+    font-family: $Hind;
+//    border: $zutaGr;
+    justify-content: flex-end;
+    align-content: flex-start;
+    position: relative;
+    left: 35%;
+    bottom: 3%;
+    
+     @media screen and (max-height: 460px){
+       left: 40%;
+    
+        }
+   
+    
+    & p {
+        //         margin-top: 25%;
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+        /* IE */
+        -ms-transform: rotate(-90deg);
+        /* Opera */
+        -o-transform: rotate(-90deg);
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    
+     @media screen and (min-width: 460px){
+       left: 2%;
+         bottom: 0%;
+         
+         
+        }
+    
+     @media screen and (min-width: 640px){
+            left: 0%;
+        }
+    
+     @media screen and (min-width:768px){
+           left: -3%;
+         bottom: -1%;
+         font-size: 200%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        left: -20%;
+        top: 6%;
+    }
+    
+    @media screen and (min-width: 1200px){
+       font-size: 250%;
+         left: -25%;
+       
+    }
+}
+
+.eventName {
+//    border: $zutaGr;
+    margin-left: 5%;
+    font-family: $Monserat;
+    letter-spacing: 2px;
+    //   text-align: center;
+    font-size: 150%;
+    display: flex;
+    font-weight: 800;
+    //    align-items: center;
+    color: #fff;
+    color: $glavnaPlava;
+    
+     @media screen and (min-width: 460px){
+       margin-left: 1%;
+         text-align: center;
+align-items: center;
+        }
+    
+     @media screen and (min-width: 640px){
+             font-size: 40px;
+        }
+    
+     @media screen and (min-width:768px){
+           font-size: 220%;
+        }
+    
+    @media screen and (min-width: 992px){
+    margin-left: 2%;
+        font-size: 250%;
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         font-size: 310%;
+       margin-left: -5%;
+    }
+}
+
+.odbrojavanje {
+    height: 45vh;
+    
+    
+    @media screen and (min-width: 460px){
+       
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+           height: 35vh;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        height: 30vh;
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         height: 38vh;
+       
+    }
+//    border: 2px solid black;
+//    display: flex;
+//    flex-direction: column;
+    margin-bottom: 15%;
+    
+    &>div:not(.prozorcicPonude) {
+        display: block;
+        height: 45%;
+        width: 100%;
+//                border: $crvenaGr;
+        display: flex;
+        flex-direction: row;
+             @media screen and (min-width:768px){
+          height: 35%;
+        }
+        
+        
+        
+        &>div {
+            width: 50%;
+//            border: $crvenaGr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        
+       
+        
+         @media screen and (min-width: 460px){
+       
+        }
+    
+     @media screen and (min-width: 640px){
+             @media screen and (max-height: 450px){
+            margin-bottom: 7%;
+        }
+        }
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+    margin-bottom: 5%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       height: 35%;
+         margin-bottom: 2%;
+       
+    }
+        
+        
+    }
+    
+    
+    & .drugiRed {
+    margin-top: 15%;
+    
+     @media screen and (min-width:640px){
+           margin-top: 12%;
+        }
+    
+         @media screen and (min-width:768px){
+           margin-top: 8%;
+        }
+        
+         @media screen and (min-width:1200px){
+           margin-top: 5%;
+        }
+           }
+    
+    
+     & .prozorcicPonude {
+         margin: 4%;
+          cursor: pointer;
+//         @media screen and (-webkit-min-device-pixel-ratio:0) { 
+//      margin: 4%;
+//}
+         
+         padding: 2% 0%;
+            width: 80%;
+        border-radius: 15%;
+//            border: $zelenaGr;
+            position: relative;
+            left: 8%;
+         top: 6%;
+         background-color: rgba(206, 195, 195, 0.5);
+//         display: flex;
+//         flex-direction: column;
+         @include naslovNaMobilnim;
+//         margin: 3%;
+         @media screen and (min-width: 460px){
+       left: 7%;
+        }
+    
+     @media screen and (min-width: 640px){
+            width: 80%;
+         left: 10%;
+         left: 7%;
+         margin: 2%;
+        }
+    
+     @media screen and (min-width:768px){
+          left: 8%;
+         
+        }
+    
+    @media screen and (min-width: 992px){
+    width: 55%;
+        left: 22%;
+    }
+    
+    @media screen and (min-width: 1200px){
+        width: 40%;
+         left: 28%;
+       
+    }
+         
+          & div {
+             text-align: center;
+             font-size: 12px;
+             margin-bottom: 2%;
+              display: block;
+         }
+         
+         
+         & img {
+             width: 95%;
+             display: block;
+             margin: 0 auto;
+             
+             @media screen and (min-width: 460px){
+       width: 75%;
+        }
+    
+     @media screen and (min-width: 640px){
+             width: 72%;
+        }
+    
+     @media screen and (min-width:768px){
+           width: 69%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+         width: 65%;
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+          width: 60%;
+       
+    }
+         }
+         
+        
+         
+        }
+    
+    
+    
+}
+
+.odbvrijeme {
+    font-size: 400%;
+    font-weight: 700;
+     @media screen and (min-width: 460px){
+       font-size: 450%;
+        }
+    
+     @media screen and (min-width: 640px){
+            
+        }
+    
+     @media screen and (min-width:768px){
+          font-size: 480%;
+        }
+    
+    @media screen and (min-width: 992px){
+    font-size: 600%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       font-size: 600%;
+         
+       
+    }
+}
+
+.odbDan,
+.odbSat,
+.odbMin,
+.odbSek {
+    font-family: $Orbitron;
+    text-align: center;
+    line-height: 0.9;
+    & p {
+    border: $granicaTimera;
+        padding: 5%;
+        border-color: $glavnaZuta;
+        @media screen and (min-width:768px){
+          border: $granicaTimeraSrednji;
+            border-color: $glavnaZuta;
+        }
+    @media screen and (min-width: 1200px){
+       border: $granicaTimeraVeliki;
+        border-color: $glavnaZuta;
+         
+       
+    }
+    }
+}
+
+.idiNaViseOdogadjaju {
+//    border: $zutaGr;
+//    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 55%;
+  
+     @media screen and (min-width: 460px){
+
+        }
+    
+     @media screen and (min-width: 640px){
+           padding-top: 43%;
+        }
+    
+     @media screen and (min-width:768px){
+         padding-top: 35%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+        padding-top: 32%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+          padding-top: 15%;
+       
+    }
+    
+    
+    & div {
+         cursor: pointer;
+        background-color: rgba(101, 106, 109, 0.19);
+        border: 2px solid rgb(52, 74, 113);;
+        width: 20%;
+        @include tekstNaMobilnim;
+        color: $glavnaZuta;
+          display: flex;
+    justify-content: center;
+    }
+}
+
+
+
+.naslov-dogadjaj {
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+
+
+
+.oDogadjanju {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 5%;
+    & h2 {
+         text-align: center;
+    color: white;
+    margin-bottom: 5%;
+         @include naslovNaMobilnim;
+        
+    }
+    padding: 5% 10%;
+    //    height: 100vh;
+//    border: 3px solid red;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & div {
+        background-color: rgba(94, 102, 109, 0.36);
+        padding: 3%;
+        border-radius: 8%;
+        @include tekstNaMobilnim;
+        color: #fff;
+    }
+}
+
+.tekst-dogadjaj {
+    text-align: center;
+}

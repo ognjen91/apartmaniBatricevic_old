@@ -1,0 +1,301 @@
+.oNamaHome {
+    padding-top: 5%;
+    
+    
+    & img {
+        width: 100%;
+    }
+}
+
+.oNama1 {
+    
+    
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    
+    @media screen and (min-width: 992px){
+        
+   
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    }
+         
+    @media screen and (min-width: 1200px){
+         margin-bottom: 0%;
+    }
+        
+    & .oNamaSl1{
+    text-align: center;
+    margin-bottom: 11%;
+//    border: $crvenaGr;
+    
+         @media screen and (min-width: 992px){
+             width: 50%;
+//             padding-right: 1.5%;
+        }
+        @media screen and (min-width: 1200px){
+             margin-bottom: 0%;
+//             padding-right: 1.5%;
+        }
+        
+        
+    & img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+    
+    .oNamaT1 {
+        @media screen and (min-width: 992px){
+             width: 50%;
+            padding-left: 6%;
+           
+        }
+         
+         @media screen and (min-width: 1200px){
+//            padding-top: 0%;
+            
+        }
+    }
+    
+    
+    & h2{
+        @include naslovNaMobilnim;
+        
+        margin-bottom: -1%;
+           @media screen and (min-width: 768px){
+        font-size: 40px;
+               margin-bottom: -0.5%
+    }
+    }
+    
+    & p {
+        margin-bottom: 7%;
+        color: $bojaTexta;
+        line-height: 1.6em;
+        font-size: 1.1;
+        font-family: $Hind;
+        letter-spacing: 0.02em;
+    }
+    
+    & a {
+        text-decoration: none;
+    }
+    
+    & a>.idiNaONama {
+        color: #6d4646;
+        border: 2px solid black;
+        width: 42%;
+        padding: 3% 4%;
+        font-size: 0.9em;
+        
+        color: $glavnaPlava;
+        
+        @media screen and (min-width: 460px){
+        padding: 3% 0%;
+            text-align: center;
+            width: 35%;
+    }
+        
+        &:hover {
+            border: 2px solid $glavnaZuta;
+            background-color: $glavnaZuta;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+.oNama2 {
+    padding-top: 8%;
+    padding-left: 5%;
+    margin-bottom: 12%;
+    
+    @media screen and (min-width: 460px){
+        margin-bottom: 10%;
+    }
+    
+    @media screen and (min-width: 992px){
+        
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    & .prviDio {
+         @media screen and (min-width: 992px){
+            order: 1;
+             display: flex;
+             flex-direction:  row;
+             padding-bottom: 5%;
+           
+        }
+    }
+        
+    & .oNamaT2 {
+        margin-bottom: 7%;
+        @media screen and (min-width: 992px){
+            width: 50%;
+            padding-right: 6%;
+            
+        }
+        
+         @media screen and (min-width: 1200px){
+            padding-top: 0%;
+//            padding-bottom: 5%;
+        }
+        
+    }
+    
+    
+         & h2{
+        font-weight: 500;
+        margin-bottom: 5%;
+        font-size: 36px;
+        letter-spacing: 0.014em;
+        font-family: $Monserat;
+        margin-bottom: 1%;
+                 @media screen and (min-width: 768px){
+        font-size: 40px;
+                     
+    }
+             
+                   @media screen and (min-width: 992px){
+        margin-bottom: 5%;
+                     
+    }
+             
+                           @media screen and (min-width: 1200px){
+        margin-top: 15%;
+                     
+    }
+    }
+    
+    
+     & p {
+        margin-bottom: 7%;
+    }
+    
+    
+    
+    .oNamaSl2 {
+     @media screen and (max-width: 991px){
+        display: none;
+        }
+    
+    width: 50%;
+    
+    
+    
+    & img {
+        width: 100%;
+    }
+}
+    
+    
+    
+    
+    
+    
+    & .features {
+          @media screen and (min-width: 992px){
+            width: 100%;
+              order: 2;
+              padding-left: 20%;
+              padding-top: 52px;
+        }
+    }
+    
+    & .feature {
+        
+        padding-top: 5%;
+         padding-bottom: 5%;
+        display: inline-block;
+        width: 45%;
+//        border: $zelenaGr;
+        
+        @media screen and (min-width: 460px){
+        padding-top: 0.5%;
+         padding-bottom: 0.5%;
+            width: 34%;
+    }
+         @media screen and (min-width: 768px){
+//        width: 30%;
+             
+             &:nth-child(3n){
+//                 margin-left:%;
+             }
+        }
+        
+        @media screen and (min-width: 992px){
+       margin-bottom: 3%;
+       width: 32%;
+        }
+        
+         
+         @media screen and (min-width: 1200px){
+            margin-bottom: 0%;
+            
+        }
+         
+        & .featpic{
+            margin-top: 5%;
+            border: 2px solid black;
+            width: 40%;
+            margin-left: 5%;
+            padding: 9% 5%;
+            
+            @media screen and (min-width: 768px){
+        width: 30%;
+        }
+            
+             & img {
+            width: 60%;
+                 display: block;
+                 margin: 0 auto;
+//            border: 2px solid black;
+                 
+                    @media screen and (min-width: 768px){
+        width: 65%;
+        }
+        }
+            
+     }
+        
+        & .feattext {
+                margin-top: 5%;
+                margin-left: 5%;
+            margin-bottom: 7%;
+       @include tekstNaMobilnim;
+            
+                     @media screen and (min-width: 992px){
+       
+        }
+            }
+    }
+}
+
+
+
+
+.videoSnimak {
+    
+    
+    
+    & video {
+        width: 100%;
+//        height: 120%;
+    }
+}

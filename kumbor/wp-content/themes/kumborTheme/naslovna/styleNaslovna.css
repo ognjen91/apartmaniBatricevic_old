@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.sajtovi > div {
+  background-color: rgba(255, 255, 255, 0);
+  border-collapse: collapse;
+  border: none; }
+
+.wrap {
+  text-align: center; }
+
+.logoAndLang {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-bottom: 8%;
+  width: 100%; }
+  @media screen and (min-width: 460px) {
+    .logoAndLang {
+      margin-bottom: 7%; } }
+  @media screen and (min-width: 640px) {
+    .logoAndLang {
+      margin-top: 3%;
+      margin-bottom: 3.5%; } }
+  @media screen and (min-width: 992px) {
+    .logoAndLang {
+      margin-bottom: 2%; } }
+  @media screen and (min-width: 1200px) {
+    .logoAndLang {
+      margin-top: 1%; } }
+  .logoAndLang .logo {
+    flex-grow: 28; }
+    .logoAndLang .logo img {
+      position: relative;
+      left: 8%;
+      width: 67%; }
+      @media screen and (min-width: 460px) {
+        .logoAndLang .logo img {
+          width: 48%; } }
+      @media screen and (min-width: 640px) {
+        .logoAndLang .logo img {
+          width: 35%; } }
+      @media screen and (min-width: 768px) {
+        .logoAndLang .logo img {
+          width: 26%; } }
+      @media screen and (min-width: 992px) {
+        .logoAndLang .logo img {
+          width: 20%; } }
+      @media screen and (min-width: 1200px) {
+        .logoAndLang .logo img {
+          width: 14%; } }
+
+.jezici {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  position: relative;
+  bottom: 25%;
+  flex-grow: 4;
+  margin-right: 2%; }
+  @media screen and (min-width: 460px) {
+    .jezici {
+      width: 13%; } }
+  @media screen and (min-width: 640px) {
+    .jezici {
+      width: 4%; } }
+  @media screen and (min-width: 768px) {
+    .jezici {
+      width: 1.5%; } }
+  @media screen and (min-width: 992px) {
+    .jezici {
+      flex-grow: 3; } }
+  @media screen and (min-width: 1200px) {
+    .jezici {
+      flex-grow: 2; } }
+  .jezici a {
+    margin-left: 5%;
+    flex-grow: 1; }
+    @media screen and (min-width: 460px) {
+      .jezici a {
+        margin-left: 3.5%; } }
+    @media screen and (min-width: 640px) {
+      .jezici a {
+        margin-left: 1%; } }
+    @media screen and (min-width: 1200px) {
+      .jezici a {
+        margin-left: 2%; } }
+  .jezici img {
+    width: 90%; }
+
+.sajtovi {
+  width: 100%; }
+  .sajtovi > div {
+    display: inline-block; }
+
+.sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+  border: 1px solid white;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 56%; }
+  @media screen and (min-width: 460px) {
+    .sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+      margin-bottom: 52.3%;
+      width: 75%; } }
+  @media screen and (min-width: 640px) {
+    .sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+      margin-bottom: 34%;
+      width: 45%; } }
+  @media screen and (min-width: 768px) {
+    .sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+      margin-bottom: 31%; } }
+  @media screen and (min-width: 992px) {
+    .sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+      margin-bottom: 21.5%;
+      width: 30%; } }
+  @media screen and (min-width: 1200px) {
+    .sajt1, .sajt2, .sajt3, .sajt4, .sajt5, .sajt6 {
+      margin-bottom: 21%;
+      width: 30%; } }
+  .sajt1 .holder, .sajt2 .holder, .sajt3 .holder, .sajt4 .holder, .sajt5 .holder, .sajt6 .holder {
+    position: relative;
+    width: 100%;
+    text-align: center; }
+
+.slajd1, .slajd2, .slajd3 {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  top: 0;
+  text-align: center; }
+
+.slajd1 > img, .slajd2 > img, .slajd3 > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 460px) {
+    .slajd1 > img, .slajd2 > img, .slajd3 > img {
+      min-width: 85%; } }
+  @media screen and (min-width: 768px) {
+    .slajd1 > img, .slajd2 > img, .slajd3 > img {
+      min-width: 75%; } }
+
+.slajd2, .slajd3 {
+  z-index: 1; }
+
+.active1, .active2, .active3, .active4, .active5, .active6 {
+  z-index: 3; }
+
+.slajd1, .slajd2, .slajd3 {
+  overflow: hidden; }
+
+.slajd1 img, .slajd2 img, .slajd3 img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.slajd1:hover img, .slajd2:hover img, .slajd3:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.slajd1 > img, .slajd2 > img, .slajd3 > img {
+  margin-bottom: -32%; }
+  @media screen and (min-width: 460px) {
+    .slajd1 > img, .slajd2 > img, .slajd3 > img {
+      margin-bottom: -28%; } }
+  @media screen and (min-width: 1200px) {
+    .slajd1 > img, .slajd2 > img, .slajd3 > img {
+      margin-bottom: -37%; } }
+
+.text {
+  position: relative;
+  margin-left: 21%; }
+  @media screen and (min-width: 460px) {
+    .text {
+      margin-left: 30%; } }
+  @media screen and (min-width: 992px) {
+    .text {
+      margin-left: 30%; } }
+  @media screen and (min-width: 1200px) {
+    .text {
+      margin-left: 0%; } }
+  .text h3 {
+    margin-bottom: 0%;
+    font-family: "Rozha One", serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    @media screen and (min-width: 1200px) {
+      .text h3 {
+        font-size: 1.3em; } }
+
+.zaMobilne {
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 7%; }
+  @media screen and (min-width: 1200px) {
+    .zaMobilne {
+      display: none; } }
+
+.zaVelike {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  display: none;
+  font-size: 0.85em;
+  font-weight: 600; }
+  @media screen and (min-width: 1200px) {
+    .zaVelike {
+      display: inherit;
+      padding: 3% 0;
+      color: #393232;
+      background-color: rgba(255, 255, 255, 0.75);
+      height: 60%; } }
+
+.uvodMob {
+  margin-bottom: 10%; }
+  @media screen and (min-width: 768px) {
+    .uvodMob {
+      display: none; } }
+  @media screen and (min-width: 500px) {
+    .uvodMob {
+      margin-bottom: 7.5%;
+      font-size: 1.2em; } }
+  @media screen and (min-width: 640px) {
+    .uvodMob {
+      font-size: 1.3em;
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 7.5%; } }
+  @media screen and (min-width: 768px) {
+    .uvodMob {
+      margin-bottom: 5.5%; } }
+  @media screen and (min-width: 992px) {
+    .uvodMob {
+      margin-bottom: 4%;
+      font-size: 1.1em; } }
+  @media screen and (min-width: 1200px) {
+    .uvodMob {
+      margin-bottom: -4%; } }
+  .uvodMob p {
+    font-family: "Great Vibes", 'Caveat', cursive; }
+  .uvodMob .uvodTekst {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    width: 98%;
+    margin-bottom: 2%; }
+    @media screen and (min-width: 460px) {
+      .uvodMob .uvodTekst {
+        font-size: 1.2em; } }
+    @media screen and (min-width: 640px) {
+      .uvodMob .uvodTekst {
+        font-size: 1em; } }
+  .uvodMob .potpisPozdrav {
+    text-align: center;
+    margin-bottom: 3%; }
+    @media screen and (min-width: 992px) {
+      .uvodMob .potpisPozdrav {
+        font-size: 1.1em;
+        margin-bottom: -1.2%; } }
+  .uvodMob .potpis {
+    text-align: center;
+    font-size: 1.5em; }
+    @media screen and (min-width: 640px) {
+      .uvodMob .potpis {
+        margin-bottom: 7.5%; } }
+    @media screen and (min-width: 992px) {
+      .uvodMob .potpis {
+        font-size: 1.1em; } }
+
+.uvodEkr {
+  margin-bottom: 2%; }
+  @media screen and (max-width: 767px) {
+    .uvodEkr {
+      display: none; } }
+  .uvodEkr .uvodTekst {
+    font-family: "Italianno", 'Caveat', cursive;
+    font-size: 1.75em; }
+
+/*# sourceMappingURL=style.css.map */

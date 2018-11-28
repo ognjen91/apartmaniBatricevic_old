@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+
+//------SLAJDER-----------
+.slider {
+    background-color: #344A71;
+    
+    & img {
+        width: 100%;
+    }
+}
+
+
+//-----DIO ZA PROVJERU DOSTUPNOSTI kapaciteta-------
+//ovo je u posebnom fajlu, _availaibility.scss

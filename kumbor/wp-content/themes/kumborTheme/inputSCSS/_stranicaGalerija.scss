@@ -1,0 +1,220 @@
+.okvir-galerija {
+    padding-top: 8%;
+//    border: 2px solid aqua;
+    
+}
+
+.navigacija-galerija {
+//    border: $crvenaGr;
+//    margin-top: 26%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 8%;
+    margin-bottom: 7%;
+    @include tekstNaMobilnim;
+    
+     @media screen and (min-width:768px){
+          width: 70%;
+         margin-left: 15%;
+         margin-bottom: 5%;
+        }
+    
+    @media screen and (min-width: 992px){
+    
+         width: 60%;
+         margin-left: 20%;
+        margin-bottom: 4%;
+    }
+    
+    @media screen and (min-width: 1200px){
+       font-size: 30px;
+        font-weight: 600;
+          width: 55%;
+         margin-left: 22.5%;
+        margin-bottom: 3%;
+       
+    }
+    
+    &>div{
+         cursor: pointer;
+        width: 25%;
+//        border: $zelenaGr;
+        font-size: 14px;
+        text-align: center;
+        
+        &:first-child{
+            border-bottom: 2px solid $glavnaPlava;
+        }
+        
+    }
+}
+
+.slikeGalerije {
+//    padding: 3% 3%;
+      @media screen and (min-width: 1200px){
+//          padding:  23% 0%;
+    }
+}
+
+.slikeIzGelerije {
+    display: inline-block;
+    width: 50%;
+         margin-right: 0%;
+    cursor: pointer;
+    border-collapse: collapse;
+    margin-bottom: -1%;
+    
+     @media screen and (min-width: 460px){
+       width: 50%;
+         margin-right: 0%;
+        }
+    
+     @media screen and (min-width: 640px){
+            width: 32%;
+         margin-right: 1%;
+        }
+    
+     @media screen and (min-width:768px){
+          
+        }
+    
+    @media screen and (min-width: 992px){
+    width: 24%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       margin-bottom: -1vh;
+         width: calc(100% / 7);
+       margin-right: 0%;
+    }
+    
+    & img {
+        width: 100%;
+    }
+}
+
+
+
+
+.slikePlaze, .slikeBaste, .slikeOkoline {
+    position: relative;
+}
+
+.min640 {
+     @media screen and (max-width:639px){
+         display: none;
+    }
+}
+
+.min768 {
+     @media screen and (max-width:767px){
+         display: none;
+    }
+}
+
+.min992 {
+     @media screen and (max-width:991px){
+         display: none;
+    }
+}
+
+.min1200 {
+     @media screen and (max-width:1199px){
+         display: none;
+    }
+}
+
+
+.okvir-slike {
+   
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+//    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(45, 48, 51, 0.39);
+    
+    z-index: 111001;
+    overflow: scroll;
+    
+    
+   
+    & .odabranaSlika {
+        width: 95%;
+        text-align: center;
+//       height: 80%;
+//        border: $crvenaGr;
+        display: flex;
+        align-items: center;
+        
+          @media screen and (min-width:768px){
+          width: 85%;
+        }
+    
+    @media screen and (min-width: 992px){
+    width: 80%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         width: 65%;
+       
+    }
+        
+        
+        
+        & div { //pomocni div za pozicioniranje
+        position: relative;
+//            border: $zelenaGr;
+        }
+        
+   
+        
+        & img {
+            width: 100%;
+//            display: block;
+//            margin: 0 auto;
+//            
+//            @media screen and (min-width: 460px){
+//        width: 95%;
+//        }
+//    
+//     @media screen and (min-width: 640px){
+//             width: 90%;
+//        }
+//    
+//     @media screen and (min-width:768px){
+//           width: 87%;
+//        }
+//    
+//    @media screen and (min-width: 992px){
+//    
+//         width: 85%;
+//    }
+//    
+//    @media screen and (min-width: 1200px){
+//       
+//         
+//       
+//    }
+        }
+    }
+    
+    & .zatvoriSliku {
+        cursor: pointer;
+        float: right;
+        border-radius: 30%;
+        
+        position: absolute;
+        top: 1.5vh;
+        text-align: center;
+        background-color: $glavnaPlava;
+        color: white;
+        width: 7%;
+    }
+}

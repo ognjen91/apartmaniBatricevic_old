@@ -1,0 +1,149 @@
+.apartmaniOkvir {
+
+    padding-top: 10%;
+    
+      @media screen and (min-width: 460px){
+         
+          padding-top:  7%;
+        }
+    
+     @media screen and (min-width: 640px){
+            padding-right: 3%;
+            padding-left: 3%;
+        }
+    
+     @media screen and (min-width:768px){
+           
+        }
+    
+    @media screen and (min-width: 992px){
+     padding-top:  5%;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         
+       
+    }
+    
+}
+
+
+// selektor samo za velicinu/responisvity
+
+
+.apartman {
+     width: 90%;
+    height: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: -4.5%;
+    display: block;
+    overflow: hidden;
+//    border: $zelenaGr;
+    
+   
+
+    @media screen and (min-width: 640px){
+        display: inline-block;
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: -6%;
+        }
+    
+    @media screen and (min-width:992px){
+        display: inline-block;
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: -3%;
+        }
+    
+    @media screen and (min-width: 1200px){
+        display: inline-block;
+        width: 23%;
+        margin-right: 2%;
+        margin-bottom: -3%;
+        }
+    
+    & img {
+         max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+        
+        &:hover {
+            -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+        }
+    }
+    
+}
+
+
+.kratakOpis {
+    width: 40%;
+    position: relative;
+    bottom: 15vh;
+    left: 50%;
+    
+    background-color: $glavnaZuta4;
+    text-align: center;
+    
+       @media screen and (min-width: 460px){
+         
+           bottom: 13vh;
+           
+          @media screen and (max-width: 500px){
+              bottom: 22vh;
+          }
+        }
+    
+     @media screen and (min-width: 640px){
+         
+          @media screen and (max-width: 500px){
+               bottom: 30vh;
+          }
+         
+            bottom: 10vh;
+        }
+    
+     @media screen and (min-width:768px){
+           @media screen and (max-width: 500px){
+               bottom: 28vh;
+          }
+         
+            bottom: 15vh;
+        }
+    
+    @media screen and (min-width: 992px){
+    @media screen and (max-width: 500px){
+              bottom: 40%;
+          }
+         
+            bottom: 13vh;
+        
+    }
+    
+    @media screen and (min-width: 1200px){
+       
+         width: 45%;
+        
+       
+    }
+    
+    
+    
+    & h4{
+        text-decoration: underline;
+        @include tekstNaMobilnim;
+        color: #000;
+    }
+    
+    & p {
+        @include tekstNaMobilnim;
+        color: #000;
+    }
+}

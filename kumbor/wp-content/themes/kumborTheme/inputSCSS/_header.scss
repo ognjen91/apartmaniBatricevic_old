@@ -1,0 +1,230 @@
+
+
+header {
+    background-color: #344A71;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17%;
+    z-index: 3;
+    
+//    border: $crvenaGr;
+//    border: $zutaGr;
+     @media screen and (min-height: 560px){
+        height: 16%;
+    }
+    
+    
+    @media screen and (min-width: 460px){
+        height: 32%;
+        
+        
+        @media screen and (min-height: 440px){
+        height: 23%; 
+        }
+        
+    }
+    
+     @media screen and (min-width: 640px){
+        height: 25%;
+         
+         
+         @media screen and (min-height: 500px){
+        height: 22%; 
+        }
+         
+           @media screen and (min-height: 750px){
+       height: 17%;
+        }
+    }
+    
+    @media screen and (min-width: 768px){
+        height: 8%;
+        
+  @media screen and (max-height: 720px){
+       height: 13%;
+        }
+        
+    }
+    
+    @media screen and (min-width: 992px){
+        background-color: $glavnaPlava5;
+        height: 9%;
+    }
+    
+     @media screen and (min-width: 1200px){
+        background-color: $glavnaPlava5;
+        height: 14.3%;
+         
+          @media screen and (max-height: 550px){
+       height: 27%;
+        }
+    }
+        
+}
+
+
+
+//--------------MAlI EKRANI (768-) ------------
+
+.menu-top-menu-container,.menu-top-menu-eng-container, .menu-top-menu-eng-container, .menu-top-menu-ru-container {
+         @media screen and (min-width: 768px){
+        display: none;
+    }
+    
+    background-color: #1F232B;
+    padding: 2%;
+    
+   
+    
+    & ul li {
+        display: inline;
+        height: 100%;
+        
+        &:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        
+        & a {
+            text-decoration: none;
+            color: #D5DFE1;
+            margin-right: 3%;
+            
+             &:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        
+    }
+}
+}
+
+.logo {
+   margin-left: 3%;
+    float: left;
+//    border: $crvenaGr;
+    width: 30%;
+    margin-top: 2%;
+    
+          @media screen and (min-width: 768px){
+        width: 25%;
+              margin-top: 1%;
+    }
+    
+       @media screen and (min-width: 992px){
+        width: 22%;
+        
+    }
+    
+    
+    & a > img {
+        width: 100%;
+//         background: #fff;
+         @media screen and (min-width: 460px){
+         width: 100%;
+    }
+        
+            @media screen and (min-width: 640px){
+        width: 85%;
+    }
+        
+           @media screen and (min-width: 768px){
+        width: 75%;
+               display: inline;
+    }
+        
+        
+          @media screen and (min-width: 992px){
+         width: 67%;
+    }
+    
+     @media screen and (min-width: 1200px){
+        width: 62%;
+    }
+    }
+    
+}
+
+.hamburger {
+//    border: $crvena;
+    width: 15%;
+    float: right;
+    margin-right: 4%;
+    margin-top: 3%;
+    
+       @media screen and (min-width: 768px){
+        margin-right: -4%;
+    }
+    
+    & img {
+        width: 35px;
+    }
+    
+        @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+
+//-----------------------------------VECI EKRANI (768px+)----------------
+
+
+
+.zaglavljeVeci {
+    display: none;
+//    border: $zutaGr;
+   background-color: $bojaZaglavlja;
+        color: $textZaglavlja;
+    display: flex;
+    
+    padding: 1% 1%;
+    justify-content: flex-start;
+    @media screen and (max-width: 767px){
+//        display: none;
+    }
+    
+    &>p, & .menu-zaglavlje-container {
+        display: inline;
+        border: $zelenaGr;
+        background-color: $bojaZaglavlja;
+        color: $textZaglavlja;
+         @media screen and (max-width: 767px){
+        display: none;
+    }
+    }
+    
+    &>p {
+        width: 37%;
+        
+//    float: left
+    }
+    
+    .menu-zaglavlje-container{
+        width: 63%;
+        display: inline;
+//        float: right;
+        
+        
+        &>ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+            
+        }
+        
+        &>ul>li {
+          display: inline;
+            margin-left: 5%;
+//            padding: 4% 2%;
+            & a {
+                color: $textZaglavlja;
+                text-decoration: none;
+            }
+            
+        }
+        
+    }
+}
+

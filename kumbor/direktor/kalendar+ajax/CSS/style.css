@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 1%; }
+
+h3 {
+  text-align: center;
+  margin-bottom: 6%; }
+
+@media screen and (min-width: 992px) {
+  .uputstvoMob {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .uputstvoEkr {
+    display: none; } }
+
+.okvir {
+  margin-top: 5%;
+  /*    display: flex;*/
+  height: 100vh; }
+  @media screen and (max-width: 460px) {
+    .okvir {
+      text-align: center; } }
+
+.kalendar {
+  width: 43%;
+  /*    height: 30%;*/
+  /*    border: 1px solid black;*/
+  display: inline-block;
+  text-align: left;
+  /*   margin: 3% auto;*/ }
+  @media screen and (min-width: 460px) {
+    .kalendar {
+      width: 40%; } }
+  @media screen and (max-width: 460px) {
+    .kalendar {
+      margin: 0 auto;
+      display: block;
+      width: 80%; } }
+
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(2) {
+  margin-top: 10%; }
+
+.kalendar:nth-of-type(3), .kalendar:nth-of-type(4) {
+  margin-top: 6%; }
+
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(3) {
+  float: left;
+  margin-left: 4%; }
+
+.kalendar:nth-of-type(2), .kalendar:nth-of-type(4) {
+  float: right;
+  margin-right: 4%; }
+
+.datum {
+  text-align: left;
+  height: 20%; }
+
+.soba, .mjesec {
+  text-align: center;
+  display: block;
+  color: rgba(45, 45, 124, 0.6); }
+
+.mjesec {
+  font-size: 1.1em;
+  margin-bottom: 3%; }
+
+.dostupnost1, .dostupnost0 {
+  border: 1px solid white;
+  color: white;
+  height: 20%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline;
+  width: calc(100% / 7);
+  /*    display: inline-block;*/
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: 500;
+  display: inline-flex; }
+
+.dostupnost2 {
+  display: none; }
+
+.dostupnost1 {
+  background-color: green;
+  background-color: #0bad37; }
+
+.dostupnost0 {
+  background-color: red;
+  background-color: #F85040; }
+
+.prazno {
+  display: inline-flex;
+  height: 20%;
+  width: calc(100% / 7);
+  /*    visibility: hidden;*/ }
+
+@media screen and (min-width: 768px) {
+  .kalendar:nth-of-type(1), .kalendar:nth-of-type(2) {
+    margin-top: 0%; }
+
+  .kalendar:nth-of-type(3), .kalendar:nth-of-type(4) {
+    margin-top: 0%; }
+
+  .kalendar:nth-of-type(1), .kalendar:nth-of-type(3) {
+    float: none;
+    margin-left: 0%; }
+
+  .kalendar:nth-of-type(2), .kalendar:nth-of-type(4) {
+    float: none;
+    margin-right: 0%; }
+
+  .okvir {
+    text-align: center; }
+
+  .kalendar {
+    width: 33%;
+    height: 22%;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.5%; }
+
+  .kalendar:nth-of-type(1), .kalendar:nth-of-type(2), .kalendar:nth-of-type(3) {
+    margin: 6%;
+    display: inline-block;
+    margin: 0 auto;
+    /*        margin: 6%;*/ }
+
+  .kalendar:nth-of-type(4) {
+    margin-top: 3%;
+    text-align: left; }
+
+  .date {
+    /*        display: inherit;*/
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 5%; }
+
+  .zaVrijednosti {
+    display: none; } }
+.datum-info {
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  display: none;
+  background-color: white; }
+
+.pocetniDatum {
+  color: rebeccapurple; }
+
+.aranzman {
+  color: chocolate; }
+
+.aranzSaPopustom {
+  color: chocolate;
+  font-size: 0.9em; }
+
+.vrijednostPopusta {
+  color: red;
+  font-weight: 400; }
+
+.pozovite {
+  color: chocolate;
+  font-size: 0.8em;
+  font-weight: 600; }
+
+.zauzeto {
+  text-align: center; }
+
+.uzvicnik {
+  width: 11px; }
+
+.iksic {
+  float: right;
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  width: 15px;
+  text-align: center;
+  border-radius: 10%; }
+  @media screen and (min-width: 992px) {
+    .iksic {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */

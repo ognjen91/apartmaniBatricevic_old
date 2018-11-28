@@ -1,0 +1,61 @@
+
+
+//--------DEF SVEGA, BOJE, MIXINOVI--------
+
+
+@import "definisanje";
+@import "mixinovi";
+@import "boje";
+
+
+//----HEADER i FOOTER----
+@import "header";
+@import "footer";
+
+
+//---MENUS------
+@import "menus";
+
+//------PREBACVIANJE NA SAJT-------
+@import "prebacivanje";
+
+//--HOME PAGE-------
+@import "home";
+@import "provjeraDostupnosti";
+@import "previewSoba";
+@import "oNama";
+@import "sliderUtisci";
+@import "najavaDogadjanja";
+@import "galerijaHomepage";
+@import "socialFeed";
+
+
+//----PROVJERA KAPACITETA----
+//stranica koja se otvara klikom na CHECK
+
+@import "provjeraKapaciteta";
+
+//----APARTMANI----
+
+@import "apartmani";
+@import "apartmaniPocetna";
+@import "kalendar";
+
+//----STRANICA DOGAĐANJA----
+
+@import "stranicaDogadjanja";
+
+//----STRANICA GALERIJA----
+
+@import "stranicaGalerija";
+
+//----STRANICA O NAMA----
+
+@import "oNamaStrana";
+
+//----STRANICA KONTAKT----
+
+@import "kontakt";
+
+
+

@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container-fluid {
+	
+}
+
+.okvir {
+    margin-top: 5%;
+/*    display: flex;*/
+ 
+/*    justify-content: center;*/
+    height: 100vh;
+/*    text-align: center;*/
+}
+
+
+.kalendar {
+    width: 43%;
+/*    height: 30%;*/
+/*    border: 1px solid black;*/
+    display: inline-block;
+    
+/*   margin: 3% auto;*/
+
+}
+
+
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(2){
+	margin-top: 10%;
+    
+}
+
+.kalendar:nth-of-type(3), .kalendar:nth-of-type(4){
+	margin-top: 6%;
+}
+
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(3){
+	float: left;
+    margin-left: 4%;
+}
+
+.kalendar:nth-of-type(2), .kalendar:nth-of-type(4){
+	float: right;
+    margin-right: 4%;
+}
+
+
+.datum {
+    border: 1px solid black;
+    height: 20%;
+}
+
+.soba, .mjesec {
+    text-align: center;
+    display: block;
+    color: rgba(45, 45, 124, 0.6);
+}
+
+.mjesec {
+    font-size: 1.1em;
+    margin-bottom: 3%;
+}
+
+.dostupnost1, .dostupnost0 {
+    border: 1px solid white;
+    color: white;
+    height: 20%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline;
+    width: calc(100% / 7);
+/*    display: inline-block;*/
+
+    align-items: center;
+    justify-content: center;
+	
+    
+    font-size: 0.8em;
+    font-weight: 500;
+    display: inline-flex;
+    
+}
+
+
+
+
+
+
+.dostupnost2 {
+    display: none;
+}
+
+
+.dostupnost1 {
+    background-color: green;
+    background-color: #0bad37;
+}
+
+.dostupnost0 {
+    background-color: red;
+	background-color: #F85040;
+}
+
+
+.prazno {
+    display: inline-flex;
+    height: 20%;
+    width: calc(100% / 7);
+/*    visibility: hidden;*/
+   
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+  
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(2){
+	margin-top: 0%;
+}
+
+.kalendar:nth-of-type(3), .kalendar:nth-of-type(4){
+	margin-top: 0%;
+}
+
+.kalendar:nth-of-type(1), .kalendar:nth-of-type(3){
+	float: none;
+    margin-left: 0%;
+}
+
+.kalendar:nth-of-type(2), .kalendar:nth-of-type(4){
+	float: none;
+    margin-right: 0%;
+}
+    
+    .okvir {
+        text-align: center;
+    }
+    
+    .kalendar {
+	    width: 33%;
+        height: 22%;
+        
+        font-size: 1.1em;
+        font-weight: 500;
+        padding: 0.5%;
+}
+    
+    
+    
+    .kalendar:nth-of-type(1), .kalendar:nth-of-type(2), .kalendar:nth-of-type(3) {
+        
+        margin: 6%;
+        display: inline-block;
+        margin: 0 auto;
+/*        margin: 6%;*/
+        text-align: left;
+    }
+    
+    .kalendar:nth-of-type(4){
+        margin-top: 3%;
+        text-align: left;
+    }
+    
+    
+    
+    .mjesec {
+/*        display: inherit;*/
+        font-size: 1.2em;
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+
+/*-----------ADMIN CSS ----------------*/
+
+
+.okvir-admin {
+   
+}
+
+.Rasko {
+    text-align: center;
+    
+}
+
+.kalendar-admin {
+    width: 90%;
+    height: 50%;
+}
+
+
+.admin-dostupnost1, .admin-dostupnost0 {
+    
+    border: 2px solid white;
+    height: 20%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: calc(100% / 7);
+/*    display: inline-block;*/
+
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-dostupnost2 {
+    display: none;
+}
+
+
+.admin-dostupnost1 {
+    background-color: green;
+    text-align: center;
+}
+
+.admin-dostupnost0 {
+	background-color: red;
+    text-align: center;
+}
+
+
+.izbor {
+     display: block;
+     margin-left: 38%;
+    margin-top: 11%;
+    width: 60%;
+    height: 10%;
+/*    border: 1px solid black;*/
+    height: 10%;
+}
+
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  
+  display: inline;
+}
+
+
+
+.danUmjesecu {
+    
+    display: inline;
+    position: relative;
+    right: 20%;
+    font-weight: 700;
+    
+   
+    
+}
+
+.submit {
+    display: inline;
+   
+    width: 50%;
+    padding: 3%;
+    display: inline;
+    float: right;
+    height: 50px;
+    display: flex;
+ 
+    justify-content: center;
+    
+    text-align: center;
+}
+
+
+.back {
+    width: 40%;
+    border: 1px solid black;
+    display: inline;
+/*    margin-left: 30%;*/
+    float: left;
+        display: flex;
+ 
+    justify-content: center;
+    
+    text-align: center;
+
+}
+
+@media screen and (min-width: 520px) {
+    .izbor {
+     
+    margin-top: 4%;
+        
+    }
+    
+        .danUmjesecu {
+            font-size: 1.2em;
+	
+}
+  
+}
+}
